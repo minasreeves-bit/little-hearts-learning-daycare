@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Hearts Learning Daycare</title>
+  <style>
+    :root {
+      --teal: #3f8f8c;
+      --soft-teal: #e9f7f6;
+      --pink: #f7b6c8;
+      --yellow: #fff3b0;
+      --text: #263238;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #fffafc 0%, #eefafa 100%);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      padding: 18px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--teal);
+    }
+
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 14px;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: radial-gradient(circle at top, var(--yellow), transparent 35%), linear-gradient(135deg, #fff4f8, var(--soft-teal));
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      margin: 0 0 12px;
+      color: var(--teal);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 26px;
+      font-size: 1.15rem;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      border: 2px solid var(--teal);
+    }
+
+    .btn-primary {
+      background: var(--teal);
+      color: var(--white);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--teal);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 34px 20px 70px;
+    }
+
+    section {
+      background: var(--white);
+      border-radius: 22px;
+      padding: 30px;
+      margin: 22px 0;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+      color: var(--teal);
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--soft-teal);
+      padding: 20px;
+      border-radius: 18px;
+      border-left: 6px solid var(--teal);
+    }
+
+    .highlight {
+      background: #fff8dc;
+      border-left: 6px solid #f2c94c;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: var(--teal);
+      color: var(--white);
+    }
+
+    footer a { color: var(--white); font-weight: 800; }
+
+    @media (max-width: 700px) {
+      .nav-links a {
+        display: inline-block;
+        margin: 6px 10px 0 0;
+      }
+      section { padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">Little Hearts Learning Daycare</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#welcome">Welcome Folder</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Where Little Hearts Grow, Learn & Shine</h1>
+    <p>A warm, safe, family-style daycare in Lemoore, California, built around learning, play, kindness, and trusted care.</p>
+    <div class="button-row">
+      <a class="btn btn-primary" href="Little_Hearts_Learning_Daycare_Welcome_Folder.pdf" target="_blank" rel="noopener">Open Welcome Folder</a>
+      <a class="btn btn-secondary" href="#contact">Contact Us</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>Welcome Families</h2>
+      <p>At Little Hearts Learning Daycare, children are cared for in a loving home environment where they can feel safe, supported, and excited to learn each day.</p>
+      <p>Our goal is to provide more than supervision. We provide structure, comfort, play, learning activities, outdoor time, meals, rest, and daily communication with families.</p>
+    </section>
+
+    <section id="programs">
+      <h2>What We Offer</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Safe Home-Based Care</h3>
+          <p>A clean, welcoming, child-focused space designed for comfort, supervision, and daily routines.</p>
+        </div>
+        <div class="card">
+          <h3>Learning Through Play</h3>
+          <p>Story time, educational activities, creative play, outdoor play, and hands-on learning experiences.</p>
+        </div>
+        <div class="card">
+          <h3>Meals & Snacks</h3>
+          <p>Meals and snacks are included, with family communication about your child’s daily needs.</p>
+        </div>
+        <div class="card">
+          <h3>Family Communication</h3>
+          <p>Parents are welcome to call or text, and updates are shared so families feel connected.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="welcome" class="highlight">
+      <h2>Parent Welcome Folder</h2>
+      <p>New families can view our Welcome Folder to learn what to expect on the first day, quick contact information, and a short “get to know your child” page.</p>
+      <p><strong>Important:</strong> Upload the PDF file to GitHub with this exact file name:</p>
+      <p><code>Little_Hearts_Learning_Daycare_Welcome_Folder.pdf</code></p>
+      <a class="btn btn-primary" href="Little_Hearts_Learning_Daycare_Welcome_Folder.pdf" target="_blank" rel="noopener">View Welcome Folder PDF</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <p><strong>Little Hearts Learning Daycare</strong></p>
+      <p>831 Tuscany Ct<br>Lemoore, CA 93245</p>
+      <p><strong>Phone:</strong> <a href="tel:15597739472">(559) 773-9472</a></p>
+      <p><strong>Email:</strong> <a href="mailto:mina.sreeves@gmail.com">mina.sreeves@gmail.com</a></p>
+      <p><strong>Hours:</strong> Monday–Friday, 6:00 AM – 6:00 PM</p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61591168093614" target="_blank" rel="noopener">Visit Our Facebook Page</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Little Hearts Learning Daycare • Lemoore, CA</p>
+  </footer>
+</body>
+</html>
